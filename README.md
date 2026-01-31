@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏨 The Wild Oasis - Customer Booking Website
 
-## Getting Started
+A customer-facing hotel booking platform for **The Wild Oasis**, a luxury boutique hotel. This project is the companion website to the [The Wild Oasis Admin Dashboard](https://github.com/hd-cmyk/17-the-wild-oasis), providing guests with a seamless booking experience.
 
-First, run the development server:
+## 🎯 Project Overview
 
+**The Wild Oasis** ecosystem consists of two applications:
+- **Admin Dashboard** ([17-the-wild-oasis](link-to-your-repo)) - Internal management system for hotel staff
+- **Customer Website** (This project) - Public-facing booking platform for guests
+
+## ✨ Features
+
+- 🏠 **Browse Cabins** - View all available luxury cabins with detailed information and photos
+- 📅 **Real-time Availability** - Check cabin availability with an interactive date picker
+- 🔒 **Secure Authentication** - Google OAuth login via NextAuth.js
+- 📝 **Reservation Management** - Create, view, update, and cancel bookings
+- 👤 **Guest Profile** - Manage personal information and view booking history
+- 💳 **Dynamic Pricing** - Automatic price calculation based on stay duration and discounts
+- 📱 **Responsive Design** - Optimized for all devices
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** JavaScript
+- **Styling:** Tailwind CSS
+- **Authentication:** NextAuth.js (Google Provider)
+- **Database:** Supabase (PostgreSQL)
+- **Date Handling:** date-fns, react-day-picker
+- **Icons:** Heroicons
+- **Deployment:** Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ installed
+- Supabase account and project
+- Google OAuth credentials
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/hd-cmyk/21-the-wild-oasis-website.git
+cd 21-the-wild-oasis-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Install dependencies
+```bash
+Set up environment variables
+```
+3. Create a .env.local file with:
+```bash
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+AUTH_GOOGLE_ID=your_google_client_id
+AUTH_GOOGLE_SECRET=your_google_client_secret
+AUTH_SECRET=your_nextauth_secret
+```
+4. Run development server
+5. Open http://localhost:3000
+📁 Project Structure
+```bash
+app/
+├── _components/     # Reusable React components
+├── _lib/           # Utilities, actions, and data services
+├── cabins/         # Cabin listing and detail pages
+├── account/        # User account and reservations
+└── api/            # API routes for authentication
+```
+🔗 Related Projects
+[The Wild Oasis Admin Dashboard](https://github.com/hd-cmyk/the-wild-oasis-admin)- Hotel management system
+📝 License
+This project is for educational purposes.
