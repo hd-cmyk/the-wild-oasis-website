@@ -58,6 +58,7 @@ AUTH_SECRET=your_nextauth_secret
 ```
 4. Run development server
 5. Open http://localhost:3000
+
 📁 Project Structure
 ```bash
 app/
