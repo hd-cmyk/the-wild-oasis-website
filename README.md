@@ -68,6 +68,6 @@ app/
 └── api/            # API routes for authentication
 ```
 🔗 Related Projects
-[The Wild Oasis Admin Dashboard](https://github.com/hd-cmyk/the-wild-oasis-admin)- Hotel management system
+[The Wild Oasis Admin Dashboard](https://github.com/hd-cmyk/the-wild-oasis)- Hotel management system
 📝 License
 This project is for educational purposes.
